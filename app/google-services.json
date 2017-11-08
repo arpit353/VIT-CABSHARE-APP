@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "756746738015",
+    "firebase_url": "https://cab-share-f861e.firebaseio.com",
+    "project_id": "cab-share-f861e",
+    "storage_bucket": "cab-share-f861e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756746738015:android:42b0c202c04edbfd",
+        "android_client_info": {
+          "package_name": "com.example.arpit.cabshare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "756746738015-k6r7lfh2ugavvep12g4k03ov2b9bndjb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6vNxnyNkRCdzWqwkmqnsL0T9iQ3uRGvs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Journey "
+        android:inputType="text"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimaryText"
+        android:id="@+id/journeyText"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="From (Specfic Location) "
+        android:inputType="text"
+        android:textSize="20dp"
+        android:background="@null"
+        android:id="@+id/fromLocation"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="To (Specfic Location) "
+        android:inputType="text"
+        android:textSize="20dp"
+        android:background="@null"
+        android:id="@+id/toLocation"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date and Time "
+        android:inputType="text"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimaryText"
+        android:id="@+id/dateandtime"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Round Trip "
+            android:inputType="text"
+            android:textSize="15dp"
+            android:textColor="@color/colorPrimaryText"
+            android:id="@+id/roundTrip"
+            android:visibility="gone"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="35dp"
+            android:textSize="15dp"
+            android:layout_marginRight="25dp"
+            android:visibility="gone"
+            android:textOn="Round Trip "
+            android:textOff="One Way "
+
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/travelDateForword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@null"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:inputType="date"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:focusable="false"
+            android:hint="Going Date" />
+
+        <EditText
+            android:id="@+id/timeAfterForward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:background="@null"
+            android:textSize="20dp"
+            android:layout_weight="2"
+            android:inputType="time"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:focusable="false"
+            android:hint="Time" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/travelDateBackward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_weight="1"
+            android:inputType="date"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:focusable="false"
+            android:visibility="gone"
+            android:textSize="15dp"
+            android:hint="Coming Date" />
+
+        <EditText
+            android:id="@+id/timeAfterBackward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_weight="2"
+            android:inputType="time"
+            android:textSize="15dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:focusable="false"
+            android:visibility="gone"
+            android:hint="Time" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="35dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/timeDelayAllowed"
+                android:layout_weight="2"
+                android:text="No of Seats"
+                android:paddingTop="2dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:textSize="25dp"
+                android:textColor="@color/colorPrimaryText"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:text="1"
+                android:id="@+id/noOfSeats"
+                android:digits="123"
+                android:ems="1"
+                android:textSize="25sp"
+                android:background="@null"
+                android:paddingTop="2dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="25dp"
+        />
+
+
+
+
+
+
+</LinearLayout>

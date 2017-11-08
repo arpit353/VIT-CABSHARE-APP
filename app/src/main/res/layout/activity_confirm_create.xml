@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.arpit.cabshare.ConfirmCreateActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+
+        <Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/toolbar3"
+            android:background="@color/colorPrimaryDark"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:titleTextColor="@color/white"
+            android:title="Confirm"
+            android:layout_height="wrap_content">
+
+        </Toolbar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Travel Details"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="35dp"
+            android:textStyle="bold"
+                />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIT University"
+            android:textColor="#222222"
+            android:textSize="20dp"
+            android:id="@+id/from"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chennai Airport"
+            android:textColor="#222222"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18000 Rs"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            />
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="35dp"
+                android:textSize="20dp"
+
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25-09-2017"
+                android:id="@+id/date"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="35dp"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="35dp"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:id="@+id/time"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03:00 AM"
+            android:id="@+id/timeValue"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="35dp"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time Delay allowed"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_below="@id/time"
+            android:id="@+id/timeDelayAllowed"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/timeValue"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Max 2 Hours"
+            android:textColor="#666666"
+            android:layout_below="@id/timeDelayAllowed"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timeDelayAllowed"
+            android:layout_marginTop="30dp"
+            android:text="No of Seats"
+            android:paddingTop="2dp"
+            android:layout_marginLeft="35dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <TextView
+            android:id="@+id/seats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/timeDelayAllowed"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="30dp"
+            android:digits="123"
+            android:ems="1"
+            android:paddingTop="2dp"
+            android:text="1"
+            android:textColor="#000000"
+
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PUBLISH"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimaryDark"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        />
+
+    </LinearLayout>
+
+</ScrollView>
+
